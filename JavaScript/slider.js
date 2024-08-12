@@ -1,0 +1,48 @@
+$(document).ready(function(){
+    $('.slider__body').slick({
+        arrows:true,
+        dots:false,
+        adaptiveHeight:false,
+        slidesToShow:3,
+        slidesToScroll:3,
+        speed:2000,
+        easing:'linear',
+        infinite:true,
+        autoplay:false,
+        autoplaySpeed:4500,
+        pauseOnFocus:false,
+        pauseOnDotsHover:true,
+        pauseOnHover:true,
+        draggable:true,
+        swipe:true,
+        touchThreshold:10,
+        touchMove:true,
+        waitForAnimate:true,
+        centerMode:false,
+        variableWidth:false,
+        responsive:[
+            {
+                breakpoint:990,
+                settings: {
+                    slidesToShow:2,
+                    slidesToShow:2,
+                    slidesToScroll:2,
+                          }
+            },{
+                breakpoint:768,
+                settings: {
+                    slidesToShow:1.5,
+                    slidesToShow:1.5,
+                    slidesToScroll:1.5,
+                          }
+            },{
+                breakpoint:568,
+                settings: {
+                    slidesToShow:1,
+                    slidesToShow:1,
+                    slidesToScroll:1,
+                          }
+            }
+        ]
+    });
+});
